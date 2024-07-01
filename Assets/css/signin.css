@@ -1,0 +1,81 @@
+@import url('./global.css');
+
+body{
+    background-image:  url();
+    background-size: cover;
+    height: 50px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-family: 'Quicksand' 'cusive ', sans-serif;
+    width: 100%;
+    padding: 24px; ;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+
+}
+.menu{
+    background:var (--form-fild-bg-color) ;
+    border: var(--form-fild-bg-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 1rem;
+
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--form-fild-bg-color);
+    max-width: 800px;
+    padding: 40px;
+    gap: 24px;
+
+}
+.login-label{
+    text-align: left ;
+}
+.login-title{
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.login-field::placeholder{
+    color: var(--form-fild-placeholder);
+
+}
+.login-field::ivalid{
+    border-color: var(--form-fild-error);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 1rem;
+
+}
+.login-actions{
+    margin-top: 24px;
+    text-align: left;
+
+}
+.login-link{
+    color: var(--link-color);
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: bold;
+
+}

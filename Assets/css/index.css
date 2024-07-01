@@ -1,0 +1,16 @@
+@import url('./global.css');
+
+main{
+    background: url('./global.css');  
+    background-size: cover;
+}
+.header{
+    position: relative;
+    padding: 100px 0 300px;
+    background-color: var(--primary-color);
+    background: linear-gradient(45deg,
+    #9b34ef 0%,#490cb0 20% 
+    traspartent 50%);
+    background-size: 400% 400%;
+    animation: gradient;
+}
