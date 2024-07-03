@@ -1,9 +1,9 @@
 @import url('./global.css');
 
-body{
-    background-image:  url();
+body {
+    background-image: url('../images/background-movies-series.png');
     background-size: cover;
-    height: 50px;
+    height: 100 vh;
 }
 
 .content{
@@ -11,71 +11,64 @@ body{
     justify-content: center;
     align-items: center;
     height: 70%;
-    font-family: 'Quicksand' 'cusive ', sans-serif;
-    width: 100%;
-    padding: 24px; ;
-
-}
-.menu{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    font-family: 'Quicksand', 'cursive', sans-serif;
     width: 100%;
     padding: 24px;
-
 }
+
 .menu{
-    background:var (--form-fild-bg-color) ;
-    border: var(--form-fild-bg-color);
-    border-radius: 8px;
-    color: var(--text-color);
-    padding: 16px;
-    font-size: 1rem;
-
+   position: relative;
 }
+
 .login{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     width: 100%;
     border-radius: 8px;
-    background-color: var(--form-fild-bg-color);
+    background-color: var(--form-field-bg-color);
     max-width: 800px;
     padding: 40px;
     gap: 24px;
 
 }
-.login-label{
-    text-align: left ;
-}
+
 .login-title{
     font-size: 1.5rem;
     margin-bottom: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
-
 }
-.login-field::placeholder{
-    color: var(--form-fild-placeholder);
 
+.login-label{
+    text-align: left;
 }
-.login-field::ivalid{
-    border-color: var(--form-fild-error);
+.login-field{
+    background: var(--form-field-bg-color);
+    border: var(--form-field-border);
     border-radius: 8px;
     color: var(--text-color);
     padding: 16px;
     font-size: 1rem;
-
 }
+
+.login-field::placeholder{
+    color: var(--form-field-placeholder);
+}
+
+.login-field:invalid{
+    border-color: var(--form-field-error);
+}
+
 .login-actions{
     margin-top: 24px;
     text-align: left;
-
 }
+
 .login-link{
     color: var(--link-color);
     text-decoration: none;
     margin-left: 24px;
     font-weight: bold;
-
 }

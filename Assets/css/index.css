@@ -1,16 +1,125 @@
 @import url('./global.css');
 
 main{
-    background: url('./global.css');  
+    background: url('../images/background-subscription.png') no-repeat;
     background-size: cover;
 }
+
+/* header */
+
 .header{
     position: relative;
+    margin-top: 50px;
     padding: 100px 0 300px;
-    background-color: var(--primary-color);
     background: linear-gradient(45deg,
-    #9b34ef 0%,#490cb0 20% 
-    traspartent 50%);
+    #56125b,
+    #0f0f10,
+    #271e6e
+    );
     background-size: 400% 400%;
-    animation: gradient;
+    animation: gradient 10s ease infinite alternate;
+}
+.header::after{
+    content: '';
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg,
+    var(--primary-color), transparent);
+}
+
+.header-content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
+}
+.header-channels{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    /* flex-wrap: wrap; */
+}
+.header-channel{
+    object-fit: contain;
+}
+.header-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+.header-title-light{
+    display: block;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+.header .text-small{
+    max-width: 300px;
+    text-align: center;
+}
+.header-button{
+    animation: wiggle 2.2s linear infinite;
+}
+/* barra divisão */
+
+.divider{
+    width: 70%;
+    height: 5px;
+    max-width: 800px;
+    background: var(--divider-bg-color);
+}
+.offer{
+    text-align: center;
+    font-size: 1.25rem;
+}
+.offer-price{
+    font-family: 'raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.offer-price-small{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 300;
+}
+/* subscription */
+.subscription-plans{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin: 80px;
+    perspective: 2000px;
+    perspective-origin: top;
+
+}
+.subscription-card{
+    background: var(--card-bg-color);
+    padding: 40px 60px;
+    border-radius: 8px;
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s ease-in-out;
+}
+.subscription-plans:has(.subscription-card:nth-child(1):hover)
+.subscription-card:nth-child(2){
+    transform: rotateY(-45deg);
+}
+.subscription-plans:has(.subscription-card:nth-child(2):hover)
+.subscription-card:nth-child(1){
+    transform: rotateY(45deg);
+}
+.subscription-description{
+    text-align: left;
+    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-left: 14px;
 }
