@@ -2,31 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/css/signin.css">
+    <meta name="viewport" content="width=En, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/signIn.css">
     <title>Entrar | HBO Max</title>
 </head>
 <body>
-    <!-- nav bar -->
+    <!-- navbar -->
     <nav class="menu">
-        <a href="index.html"><img src="" alt="">
+        <a href="index.html" class="menu-logo">
+            <img class="menu-logo-image" src="Assets/Img/hbo-logo.png" alt="logo da marca">
         </a>
-
         <div>
-            <a href="signin.html" class="menu-item">Entrar</a>
-            <a href="subscription" class="menu-item menu-item-button button">Assine Agora</a>
+            <a href="signIn.html" class="menu-item">Entrar</a>
+            <a href="#subscription" class="menu-item menu-item-button button">Assine Agora</a>
         </div>
     </nav>
 
-    <main>
-        <forms class="login-container">
+    <main class="content">
+        <form class="login container">
             <h1 class="login-title">Entrar</h1>
-            <label for="">Você tem uma conta HBO Max</label>
+            <label class="login-label">Você tem uma conta HBO Max ?</label>        
             <input 
             class="login-field"
-            type="email"
+            type="email" 
             name="email"
-            placeholder="Endereço de email">
+            placeholder="Endereço de E-mail">
 
             <input 
             class="login-field"
@@ -34,47 +34,46 @@
             name="password" 
             placeholder="Senha"
             minlength="8"
-            maxlength="10">
-            
-
+            maxlength="10">   
 
             <div class="login-actions">
-                <button type="submit" class="button button-gradient">Entrar</button>
-                <a href="#" class="login-link">Esqueci a senha</a>
-
-
+                <button type="submit" class="button button-gradient" >Entrar</button>
+                <a href="#" class="login-link">Esquesceu Senha?</a>
             </div>
-        </forms>
+        </form>
     </main>
 
-
-    <footer class="footer-container" >
+    <footer class="footer container">
 
         <div>
-            <a href="" class="footer-link">Agora na HBO Max</a>
+            <a href="" class="footer-link">Agora na HBO MAX</a>
             <a href="" class="footer-link">Em Breve</a>
             <a href="" class="footer-link">Filmes em Destaque</a>
             <a href="" class="footer-link">Séries</a>
             <a href="" class="footer-link">Ajuda</a>
-
         </div>
 
         <p class="text-small footer-legal">
-            ©2024 WarnerMedia Direct Latin America, LLC Todos os direitos de imagens da HBO Max é usado sob licença.
+            @2024 WarnerMedia Direct Latin Amarica, LLC Todos os direitos reservados.
+            HBO Max é usado sob licença.
         </p>
 
         <div class="footer-social">
             <a href="" class="footer-social-link">
-                <img src="Assets/Img/instagram_0.png" class="footer-social" alt="">
-                <img src="Assets/Img/fb_0.png" class="footer-social" alt="">
-                <img src="Assets/Img/twitter_0.png" class="footer-social" alt="">
-                <img src="Assets/Img/youtube_0.png" class="footer-social" alt="">
+                <img src="./assets/images/fb_0.png" class="footer-social-link" alt="facebook">
+            </a>
+            <a href="" class="footer-social-link">
+                <img src="./assets/images/twitter_0.png" class="footer-social-link" alt="facebook">
+            </a>
+            <a href="" class="footer-social-link">
+                <img src="./assets/images/instagram_0.png" class="footer-social-link" alt="facebook">
+            </a>
+            <a href="" class="footer-social-link">
+                <img src="./assets/images/youtube_0.png" class="footer-social-link" alt="facebook">
             </a>
         </div>
+
     </footer>
     
-
 </body>
 </html>
-
-

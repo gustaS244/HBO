@@ -123,3 +123,69 @@ main{
     margin-bottom: 14px;
     padding-left: 14px;
 }
+.subscription-price{
+    font-size: 2rem;
+    font-family: 'raleway' sans-serif;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.subscription-price .text-small{
+    color: var(--text-Color);
+}
+.subscription-plan{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+}
+.contents{
+    margin: 100px auto;
+}
+
+.contents-container{
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr ) ;
+    gap: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.contents-card :hover{
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+
+}
+.contents-card:hover .contents-image {
+    opacity: 0;
+
+}
+.contents-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+
+}
+/* HBO Content */
+
+.contents-card:nth-child(3):hover{ 
+    background-image: url(../images/dc-hover.webp);
+
+}
+/* DC content */
+.contents-card:nth-child(4):hover{ 
+    background-image: url(../images/WB-hover.webp);
+
+}
+/* CN Content */
+
+.contents-card:nth-child(5):hover{ 
+    background-image: url(../images/CN-hover.webp);
+
+}
+/* Champions League Content */
+.contents-card:nth-child(6):hover{ 
+    background-image: url(../images/UCL-hover.webp);
+
+}
